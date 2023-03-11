@@ -1,12 +1,10 @@
 import React, { FC } from "react";
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/Navigation/Navbar";
-import { Box } from "@mui/material";
 import {Container, styled} from "@mui/system";
 
 interface Props {
-  children: JSX.Element | JSX.Element[];
+  children: any;
 }
 
 

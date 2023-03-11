@@ -5,7 +5,7 @@ import WorksItem from "@/components/Works/WorksItem";
 
 const WorksGrid = () => {
     return (
-        <Grid container spasing={2} mt={2} style={{width:"100%"}} >
+        <Grid container spacing={2} mt={2} style={{width:"100%"}} >
             {images.map(el =><Grid item xs={12} sm={6} md={4} key={el.id}>
                 <WorksItem image={el}/>
             </Grid>)}
