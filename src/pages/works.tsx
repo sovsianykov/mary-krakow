@@ -5,7 +5,7 @@ import WorksGrid from "@/components/Works/WorksGrid";
 const Works = () => {
     return (
         <Layout>
-          {/*<WorksGrid/>*/}
+          <WorksGrid/>
         </Layout>
     );
 };
