@@ -9,7 +9,7 @@ interface Props {
 
 
 const Wrapper = styled(Container)`
-  width: 100%;
+   max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;

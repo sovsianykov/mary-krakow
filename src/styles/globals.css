@@ -67,6 +67,7 @@ nav{
   font-size: 18px;
   position: relative;
   transition: all 0.2s;
+
 }
 
 .nav__link:hover{
@@ -90,11 +91,12 @@ nav{
     width: fit-content;
     column-gap: 24px;
     align-items: center;
+
   }
   .nav__link::before{
     content: '';
     position: absolute;
-    width: 0%;
+    width: 0;
     height: 6px;
     bottom: -16px;
     left: 0;
