@@ -8,7 +8,10 @@ interface Props {
 }
 
 const Wrapper = styled(Box)`
-  width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 450px;
   padding: 0;
   background-color: #f1f1f1;
