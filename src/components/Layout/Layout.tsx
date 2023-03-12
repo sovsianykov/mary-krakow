@@ -13,6 +13,7 @@ const Wrapper = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
 `
 

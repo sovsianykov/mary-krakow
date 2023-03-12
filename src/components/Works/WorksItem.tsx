@@ -47,7 +47,7 @@ const WorksItem: FC<Props> = ({ image }) => {
       </ImageFrame>
       <Box className="text">
         <Typography align="center" className="title">
-          {`"` + image.title + `"`}
+          {`"\n` + image.title + `"\n`}
         </Typography>
         <Typography variant="subtitle1" align="center" className="desc">
           {image.desc}

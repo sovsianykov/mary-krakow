@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import React, { useState } from "react";
-import Logo from "../../assets/logo-mary.png";
+// import Logo from "../../assets/logo-mary.png";
 import NavItem from "./NavItem";
 
 const MENU_LIST = [
@@ -17,7 +17,7 @@ const Navbar = () => {
         <header>
             <nav className={`nav`}>
                 <Link href={"/"} className='logo'>
-                   Mary Ovsianykova
+                   Ovsianykova Mary
                 </Link>
                 <div
                     onClick={() => setNavActive(!navActive)}
