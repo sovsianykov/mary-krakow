@@ -13,8 +13,8 @@ const Wrapper = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-
+  padding: 0;
+  margin: 0;
 `
 
 
@@ -27,7 +27,7 @@ const Layout: FC<Props> = ({ children }) => {
         <title>Ovsianykova</title>
         <meta name="description" content="Mary Ovsianykova artist illustrator" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/public/assets/favicon.ico" />
       </Head>
       <main>
         <Navbar />

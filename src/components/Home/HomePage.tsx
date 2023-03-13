@@ -3,7 +3,7 @@ import HeroPhoto from "../../components/HeroPhoto/HeroPhoto";
 import {Box, Button, Divider, Grid, styled, useMediaQuery} from "@mui/material";
 import {useTheme} from "@mui/system";
 
-const Wrapper = styled(Grid)<Pick<styleProps, "isMobile">>`
+const Wrapper = styled(Grid)<Pick<styleProps, "matches">>`
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -17,12 +17,13 @@ const Wrapper = styled(Grid)<Pick<styleProps, "isMobile">>`
     width: 100%;
   }
   .text {
-    position: relative;
-  
+    padding: 0 16px;
+
+
     .title {
       margin-top: 20px;
       text-align: center;
-      font-size: ${({isMobile}) => isMobile ? "25px" : "40px"};
+      font-size: ${({matches}) => matches ? "25px" : "40px"};
       letter-spacing: 0.2rem;
       //font-family: "Chilanka", serif;
     }
@@ -32,7 +33,7 @@ const Wrapper = styled(Grid)<Pick<styleProps, "isMobile">>`
     }
     .description {
       margin-top: 20px;
-      font-size: ${({isMobile}) => isMobile ? "18px" : "25px"};
+      font-size: ${({matches}) => matches ? "18px" : "25px"};
       font-weight: 400;
       letter-spacing: 0.1rem;
     }
@@ -45,7 +46,7 @@ const Wrapper = styled(Grid)<Pick<styleProps, "isMobile">>`
   }
 `
 interface styleProps {
-    isMobile: boolean;
+    matches: boolean;
 }
 
 const HomePage = () => {
@@ -53,7 +54,7 @@ const HomePage = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
     console.log(isMobile)
   return (
-    <Wrapper isMobile={isMobile} container >
+    <Wrapper matches={isMobile} container >
       <Grid item xs={12}  className='image'>
         <HeroPhoto />
       </Grid>

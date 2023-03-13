@@ -9,19 +9,22 @@ interface Props {
 
 const Wrapper = styled(Box)`
   width: 100%;
-  display: flex;
+  max-width: 400px;
+  justify-self: center;
   flex-direction: column;
   align-items: center;
   height: 450px;
+  margin: 0 auto 10px auto;
   padding: 0;
-  background-color: #f1f1f1;
 
   .text {
     width: 100%;
     height: 100px;
+    background-color: #f1f1f1;
+
 
     .title {
-      margin-top: 15px;
+      padding-top: 15px;
       font-size: 16px;
     }
 
@@ -33,6 +36,7 @@ const Wrapper = styled(Box)`
   }
 `;
 const ImageFrame = styled(Box)`
+  margin: 0 auto;
   height: 350px;
   width: 350px;
   overflow: hidden;

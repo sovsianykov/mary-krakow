@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../../assets/maryHero.jpg'
+import hero from '../../../public/assets/maryHero.jpg'
 import Image from "next/image";
 import {Box, styled} from "@mui/material";
 

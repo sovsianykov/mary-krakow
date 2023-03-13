@@ -1,8 +1,8 @@
-import image1 from "./images/image1.jpg"
-import image9 from "./images/image9.jpg"
-import image10 from "./images/image10.jpg"
-import image11 from "./images/image11.jpg"
-import image12 from "./images/image12.jpg"
+import image1 from "../../public/assets/images/image1.jpg"
+import image9 from "../../public/assets/images/image9.jpg"
+import image10 from "../../public/assets/images/image10.jpg"
+import image11 from "../../public/assets/images/image11.jpg"
+import image12 from "../../public/assets/images/image12.jpg"
 
 export const images = [
     { id : 1, title: "lorem", desc:"lorem" ,src: image10},
