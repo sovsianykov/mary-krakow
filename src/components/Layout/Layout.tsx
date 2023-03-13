@@ -4,7 +4,8 @@ import Navbar from "@/components/Navigation/Navbar";
 import {Container, styled} from "@mui/system";
 
 interface Props {
-  children: any;
+  children: JSX.Element | JSX.Element [];
+  pageTitle: string;
 }
 
 
@@ -14,17 +15,17 @@ const Wrapper = styled(Container)`
   flex-direction: column;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 `
 
 
 
 
-const Layout: FC<Props> = ({ children }) => {
+const Layout: FC<Props> = ({ children,pageTitle }) => {
   return (
     <>
       <Head>
-        <title>Ovsianykova</title>
+        <title>{pageTitle}</title>
         <meta name="description" content="Mary Ovsianykova artist illustrator" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/public/assets/favicon.ico" />

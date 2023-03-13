@@ -4,7 +4,7 @@ import WorksGrid from "@/components/Works/WorksGrid";
 
 const Works = () => {
     return (
-        <Layout>
+        <Layout pageTitle="Art Works">
           <WorksGrid/>
         </Layout>
     );

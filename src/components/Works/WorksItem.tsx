@@ -8,8 +8,7 @@ interface Props {
 }
 
 const Wrapper = styled(Box)`
-  width: 100%;
-  max-width: 400px;
+  width: 350px;
   justify-self: center;
   flex-direction: column;
   align-items: center;
@@ -54,7 +53,7 @@ const WorksItem: FC<Props> = ({ image }) => {
       </ImageFrame>
       <Box className="text">
         <Typography align="center" className="title">
-          {`"\n` + image.title + `"\n`}
+          {`"\n` + image.title + ` "\n`}
         </Typography>
         <Typography variant="subtitle1" align="center" className="desc">
           {image.desc}
