@@ -1,4 +1,4 @@
-import React, { FC, memo } from "react";
+import React, {FC, memo, useMemo} from "react";
 import { Box, styled, Typography } from "@mui/material";
 import Image from "next/image";
 import { ImageItem } from "@/components/Works/models";
@@ -25,6 +25,8 @@ const Wrapper = styled(Box)`
     .title {
       padding-top: 15px;
       font-size: 16px;
+      letter-spacing: 0.06rem;
+      font-weight: 600;
     }
 
     .desc {
@@ -46,6 +48,7 @@ const ImageFrame = styled(Box)`
 `;
 
 const WorksItem: FC<Props> = ({ image }) => {
+    const q = useMemo(()=> `"`,[])
   return (
     <Wrapper>
       <ImageFrame>
@@ -53,10 +56,10 @@ const WorksItem: FC<Props> = ({ image }) => {
       </ImageFrame>
       <Box className="text">
         <Typography align="center" className="title">
-          {`"\n` + image.title + ` "\n`}
+          {  `${q}${image.title}${q}`}
         </Typography>
         <Typography variant="subtitle1" align="center" className="desc">
-          {image.desc}
+          {`/${image.desc}/`}
         </Typography>
       </Box>
     </Wrapper>

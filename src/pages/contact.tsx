@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@/components/Layout/Layout";
-import { Grid, styled, Typography } from "@mui/material";
+import {Button, Grid, styled, Typography} from "@mui/material";
 import { SocialIcon } from "react-social-icons";
 
 const Wrapper = styled(Grid)`
@@ -15,6 +15,10 @@ const Wrapper = styled(Grid)`
     align-items: center;
     justify-content: center;
     margin: 10px 0;
+    .icon {
+      width: 50px;
+      height: 50px;
+    }
   }
 `;
 
@@ -27,54 +31,35 @@ const Contact = () => {
       <Wrapper container spacing={2}>
         <Grid item xs={3} className='item'>
           <SocialIcon
-              target='_blank'
             url="https://www.linkedin.com/in/mary-ovsianykova-64b777211/"
-            style={{ height: 50, width: 50 }}
+            className='icon'
           />
         </Grid>
         <Grid item xs={3} className='item'>
           <SocialIcon
             url="https://www.facebook.com/profile.php?id=100008529724244"
-            style={{ height: 50, width: 50 }}
+            className='icon'
           />
         </Grid>
         <Grid item xs={3} className='item'>
           <SocialIcon
             url="https://www.instagram.com/marikartist/?fbclid=IwAR2BlmkhtKUmjWFFrdATMbe6DxxZzPWx1_ZDh-OfxWgJpYWnnrdXREByVDc"
-            style={{ height: 50, width: 50 }}
+            className='icon'
           />
         </Grid>
           <Grid item xs={3} className='item'>
               <SocialIcon
-                  url="https://behance.com/in/jaketrent"
-                  style={{ height: 50, width: 50 }}
-              />
-          </Grid>
-          <Grid item xs={3} className='item'>
-              <SocialIcon
-                  url="https://twitter.com/in/jaketrent"
-                  style={{ height: 50, width: 50 }}
-              />
-          </Grid>
-          <Grid item xs={3} className='item'>
-              <SocialIcon
-                  url="https://mailto.com/in/jaketrent"
-                  style={{ height: 50, width: 50 }}
-              />
-          </Grid>
-          <Grid item xs={3} className='item'>
-              <SocialIcon
-                  url="https://whataup.com/in/jaketrent"
-                  style={{ height: 50, width: 50 }}
-              />
-          </Grid>
-          <Grid item xs={3} className='item'>
-              <SocialIcon
-                  url="https://telegram.com/in/jaketrent"
-                  style={{ height: 50, width: 50 }}
+                  url="https://www.behance.net/molbert201ffcf"
+                  className='icon'
               />
           </Grid>
       </Wrapper>
+        <Button  style={{ color:"brown" ,marginTop: 10,fontSize:16}} >
+            <a href="tel:+48788414264" className='tel'>+48 788-414-264</a >
+        </Button>
+        <Button  style={{ color:"brown" ,marginTop: 10,fontSize:16}} >
+            < a href="mailto:molbert2014@gmail.com">molbert2014@gmail.com</a>
+        </Button>
     </Layout>
   );
 };
