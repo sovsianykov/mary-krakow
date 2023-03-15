@@ -101,7 +101,7 @@ export const images = [
   },
   {
     id: 16,
-    title: "Jezu daje nam zbawienie",
+    title: "Jezus daje nam zbawienie",
     desc: "25/35 cm, paper, lithography",
     src: image16,
 
