@@ -12,7 +12,7 @@ const Wrapper = styled(Box)`
   justify-self: center;
   flex-direction: column;
   align-items: center;
-  height: 450px;
+  height: 350px;
   margin: 0 auto 10px auto;
   padding: 0;
 
@@ -32,12 +32,11 @@ const Wrapper = styled(Box)`
 `;
 const ImageFrame = styled(Box)`
   margin: 0 auto;
-  height: 350px;
+  height: 246px;
   width: 350px;
   overflow: hidden;
   .image {
     width: 350px;
-    height: 350px;
   }
 `;
 
