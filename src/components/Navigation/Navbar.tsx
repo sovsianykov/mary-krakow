@@ -1,13 +1,14 @@
 import Link from "next/link";
 // import Image from "next/image";
 import React, { useState } from "react";
-// import Logo from "../../art_works/logo-mary.png";
+// import Logo from "../../static_data/logo-mary.png";
 import NavItem from "./NavItem";
 
 const MENU_LIST = [
     { text: "Home", href: "/" },
     { text: "Art Works", href: "/works" },
     { text: "Contact", href: "/contact" },
+    { text: "Book illustration", href: "/book" },
 ];
 const Navbar = () => {
     const [navActive, setNavActive] = useState(false);

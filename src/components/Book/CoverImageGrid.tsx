@@ -1,7 +1,7 @@
 import React, { FC, memo } from "react";
 import {Grid, styled, Typography} from "@mui/material";
-import { images } from "@/static_data/art_works_static";
-import WorksItem from "@/components/Works/WorksItem";
+import {coverImages} from "@/static_data/book_covers_static";
+import CoverImageItem from "@/components/Book/CoverImageItem";
 
 const PageTitle= styled(Typography)`
   font-size: 24px;
@@ -10,13 +10,13 @@ const PageTitle= styled(Typography)`
 `
 
 
-const WorksGrid: FC = () => {
+const CoverImageGrid: FC = () => {
   return (<>
-        <PageTitle>Art Works</PageTitle>
+        <PageTitle>Book illustration</PageTitle>
     <Grid container spacing={2}  style={{ width: "100%" }}>
-      {images.map((el) => (
+      {coverImages.map((el) => (
         <Grid item xs={12} sm={6} lg={4} key={el.id}>
-          <WorksItem image={el} />
+          <CoverImageItem image={el} />
         </Grid>
       ))}
     </Grid>
@@ -24,4 +24,4 @@ const WorksGrid: FC = () => {
   );
 };
 
-export default memo(WorksGrid);
+export default memo(CoverImageGrid);
