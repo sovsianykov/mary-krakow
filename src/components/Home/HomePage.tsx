@@ -57,7 +57,7 @@ const HomePage = () => {
       <Grid item xs={12}  className='image'>
         <HeroPhoto />
       </Grid>
-      <Grid item xs={12} sm={7} className='text'>
+      <Grid item xs={12} className='text'>
         <Box  className="title">Hello, I'm Mariia! </Box>
           <Divider className='divider'/>
           <p className="description">

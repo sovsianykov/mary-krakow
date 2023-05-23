@@ -34,6 +34,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   background-color: #f1f1f1;
+  box-shadow: 0 4px 4px -4px gray;
 }
 .nav__menu-bar{
   display: flex;
@@ -55,7 +56,7 @@ nav{
   width: 288px;
   row-gap: 24px;
   right: -288px;
-  padding: 24px 16px;
+  /*padding: 24px 16px;*/
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
   background-color: #f1f1f1;
