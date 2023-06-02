@@ -2,7 +2,8 @@ import image1 from "../../public/assets/images/cover/obkladynka2350.jpg";
 import image2 from "../../public/assets/images/cover/1rozworot350.jpg";
 import image3 from "../../public/assets/images/cover/3rozworot350.jpg";
 import image4 from "../../public/assets/images/cover/4rozworot350.jpg";
-import image5 from "../../public/assets/images/cover/5rozworot350.jpg";
+import image5 from "../../public/assets/images/cover/5rozworot500.jpg";
+import image6 from "../../public/assets/images/cover/2rozworot500.jpg";
 
 
 export const coverImages = [
@@ -31,5 +32,10 @@ export const coverImages = [
     id: 5,
     title: "Two-page spread 4",
     src: image5,
+  },
+  {
+    id: 6,
+    title: "Two-page spread 5",
+    src: image6,
   },
 ];
